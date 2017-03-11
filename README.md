@@ -13,7 +13,7 @@ My goals with this project are twofold.
 
 * Create a full stack data analysis software with:
 
-  * Simple but responsive front-end built out from Google's web starter kit  
+  * Simple but responsive front-end  
   * Routing with Python Flask  
   * Python services layer  
   * Database TBD but likely MongoDB  

@@ -1,24 +1,19 @@
+"""Times square for app. The user selects a question, which can
+be one of this module's functions. And then each question triggers
+the steps needed to answer it"""
+
 class PatentQuestions:
     def __init__(self):
-        self.post_request_template = {
-            "q": {
-                "_text_any":{
-                    "patent_abstract": 1
-                    }
-                },
-                "f": 1,
-                "s": [{"patent_date":"desc"}],
-                "o": {
-                    "per_page": 100
-                }
-            }
-
+        pass
 
     def num_citations_by_patent(self):
         """Count how many citations a patent has.
         Possible regression methods are poisson, OLS,
         ridge, and lasso."""
-        pass
+        query_fields = {"_gte":{"patent_date":"2010-01-01"}}
+        result_fields = ['app_date', 'assignee_country', 'assignee_total_num_patents',
+        'assignee_type', 'patent_num_combined_citations']
+
 
     def num_citations_of_patent(self):
         """Count how many patents will cite this patent.
